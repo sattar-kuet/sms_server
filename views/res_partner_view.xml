@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_res_partner_sms_token">
+            <field name="name">res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="function" position="after">
+                    <field name="sms_token"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
